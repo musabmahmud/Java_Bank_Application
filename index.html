@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,35 +10,66 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
 
         <div class="container text-center text-uppercase">
-            <div id="login" class="login shadow">
+            <div id="login-area" class="login-area shadow">
                 <h1 class="">Login Here</h1>
-                <form action="" method="get">
-                    <input type="text" class="form-control" name="" id="">
-                    <input type="password" class="form-control" name="" id="">
-                    <button class="btn btn-success">Login</button>
-                </form>
+                <!-- <form action="" method=""> -->
+                <input type="text" placeholder="Enter Your Name"
+                    class="form-control" name="">
+                <input type="password" placeholder="Enter Your Password"
+                    class="form-control" name="">
+                <button id="login" class="btn btn-success">Login</button>
+                <!-- </form> -->
             </div>
+            <div id="transition-area" class="transition-area">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="item red">
+                            <h6>Deposit</h6>
+                            <span class="money">$00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="item yellow">
+                            <h6>Withdraw</h6>
+                            <span class="money">$00</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="item orange">
+                            <h6>balance</h6>
+                            <span class="money">$00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="enterAmount shadow">
+                                <h6>Deposit</h6>
+                                <input type="text" class="form-control" name=""
+                                    id=""
+                                    placeholder="$ Amount You Want To Deposit">
+                                <div class="btn btn-success">Deposit</div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="enterAmount shadow">
+                                <h6>Withdraw</h6>
+                                <input type="text" class="form-control" name=""
+                                    id=""
+                                    placeholder="$ Amount You Want To Withdraw">
+                                <div class="btn btn-success">Withdraw</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <script
             src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -45,5 +77,16 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script
             src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script>
+        const loginBtn = document.getElementById("login");
+
+        loginBtn.addEventListener("click", function () {
+            const loginArea = document.getElementById("login-area");
+            const transitionArea = document.getElementById("transition-area");
+            loginArea.style.display = "none";
+            transitionArea.style.display = "block";
+        })
+    </script>
     </body>
+
 </html>

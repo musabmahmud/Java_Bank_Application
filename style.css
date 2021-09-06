@@ -2,11 +2,49 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
 }
-.login{
+.login-area{
     padding: 100px 50px;
     margin: 100px auto;
 }
 input{
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.red{
+    background-color: red;
+}
+.orange{
+    background-color: orange;
+}
+.yellow{
+    background-color: blue;
+}
+.money{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 600;
+}
+.item{
+    padding: 20px;
+    border-radius: 10px;
+}
+.item h6{
+    text-align: left;
+    color: #fff;
+}
+.item span{
+    display: block;
+    padding: 30px;
+}
+
+#transition-area{
+    padding: 70px;
+    display: none;
+}
+
+.payment{
+    margin: 75px auto;
+}
+.enterAmount{
+    padding: 50px;
 }
