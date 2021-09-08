@@ -16,13 +16,11 @@
         <div class="container text-center text-uppercase">
             <div id="login-area" class="login-area shadow">
                 <h1 class="">Login Here</h1>
-                <!-- <form action="" method=""> -->
-                <input type="text" placeholder="Enter Your Name"
-                    class="form-control" name="">
-                <input type="password" placeholder="Enter Your Password"
-                    class="form-control" name="">
+                <input type="text" id="name" placeholder="Enter Your User Name"
+                class="form-control" name="" required>
+                <input type="password" id="password" placeholder="Enter Your Password"
+                    class="form-control" name="" required>
                 <button id="login" class="btn btn-success">Login</button>
-                <!-- </form> -->
             </div>
             <div id="transition-area" class="transition-area">
                 <div class="row">
@@ -82,8 +80,9 @@
 
         loginBtn.addEventListener("click", function () {
             const loginArea = document.getElementById("login-area");
-            const transitionArea = document.getElementById("transition-area");
             loginArea.style.display = "none";
+
+            const transitionArea = document.getElementById("transition-area");
             transitionArea.style.display = "block";
         })
 
