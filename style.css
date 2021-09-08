@@ -32,7 +32,7 @@ input{
     text-align: left;
     color: #fff;
 }
-.item span{
+.item .money{
     display: block;
     padding: 30px;
 }
